@@ -5,8 +5,6 @@ const filtroLuz = document.getElementById("filtro-luz");
 const filtroDificuldade = document.getElementById("filtro-dificuldade");
 const contador = document.getElementById("contador");
 
-// ---------- 2. Textos que aparecem para o usuário ----------
-// Nos dados guardamos códigos curtos ("muita"); aqui traduzimos para texto bonito.
 const rotulosLuz = {
   pouca: "Pouca luz",
   media: "Luz indireta",
@@ -15,7 +13,9 @@ const rotulosLuz = {
 
 const rotulosDificuldade = {
   facil: "Fácil",
-  media: "Média"
+  media: "Média",
+  dificil: "Dificil"
+  
 };
 
 // ---------- 3. Funções auxiliares ----------
@@ -43,13 +43,14 @@ function normalizarTexto(texto) {
 function criarCard(planta) {
   const card = document.createElement("article");
   card.classList.add("card");
-
+  visual = document.createElement("img");
+  visual.src = planta.imagem;        
+  visual.alt = planta.textoImagem;  
+  visual.classList.add("card-imagem");
   const emoji = criarElemento("span", planta.emoji, "card-emoji");
-  emoji.setAttribute("aria-hidden", "true"); // é só decoração para leitores de tela
-
+  emoji.setAttribute("aria-hidden", "true");
   const nome = criarElemento("h2", planta.nome, "card-nome");
   const descricao = criarElemento("p", planta.descricao, "card-descricao");
-
   const etiquetas = document.createElement("ul");
   etiquetas.classList.add("etiquetas");
 
@@ -63,7 +64,7 @@ function criarCard(planta) {
     etiquetas.appendChild(criarElemento("li", texto));
   });
 
-  card.append(emoji, nome, descricao, etiquetas);
+  card.append(visual,emoji , nome, descricao, etiquetas);
   return card;
 }
 

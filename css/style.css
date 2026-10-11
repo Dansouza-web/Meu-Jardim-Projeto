@@ -10,7 +10,6 @@
   --cor-borda: #c9d3c0;
 }
 
-/* Reset básico: tira as margens padrão do navegador */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +23,6 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- Cabeçalho ---------- */
 .cabecalho {
   background-color: var(--cor-folha);
   color: #f4f8ef;
@@ -117,7 +115,7 @@ body {
   width: 3.25rem;
   height: 3.25rem;
   font-size: 1.75rem;
-  background-color: var(--cor-fundo);
+  background-color:white;
   border-radius: 50%;
   margin-bottom: 0.75rem;
 }
@@ -166,4 +164,12 @@ ul {
     justify-content: center;
     gap: 20px;
     list-style: none;
+}
+.card-imagem {
+  display: block;
+  width: 100%;          /* ocupa a largura toda do card */
+  aspect-ratio: 4 / 3;  /* todas as fotos ficam com a mesma proporção */
+  object-fit: cover;    /* corta o excesso em vez de esticar a foto */
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
 }
