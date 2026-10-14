@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Jardim </title>
+  <link rel="stylesheet" href="css/flores.css">
+   <link rel="icon" href="img/imagensplantas/icons8-potted-plant-96 (1).png">
+
+<body>
+
+  <header class="cabecalho">
+    <h1>Meu Jardim | Flores</h1>
+    <p>Escolha a Flor que ama e com a luz e o tempo que você tem.</p>
+    <nav>
+    <ul>
+    <li> <a href="index.html" style="color: #a9c46c;" style="text-align: center;">Inicio</a></li>
+    <li> <a href="plantas.html" style="color: #a9c46c;" style="text-align: center;">Plantas</a></li>
+    <li><a href="flores.html"  style="color: #a9c46c;">Flores</a></li>
+    <li><a href="contato.html"  style="color: #a9c46c;">Contato</a></li>
+    </ul>
+    </nav>
+  </header>
+ <nav> </nav>
+  <main class="conteudo">
+    <section class="filtros" aria-label="Filtros do catálogo">
+      <div class="campo">
+        <label for="busca">Buscar pelo nome da flor</label>
+        <input type="search" id="busca" placeholder="Ex.: Orquidea">
+      </div>
+
+      <div class="campo">
+        <label for="filtro-luz">Luz do local</label>
+        <select id="filtro-luz">
+          <option value="todas">Qualquer luz</option>
+          <option value="pouca">Pouca luz</option>
+          <option value="media">Luz indireta</option>
+          <option value="muito">Sol direto</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="filtro-dificuldade">Dificuldade</label>
+        <select id="filtro-dificuldade">
+          <option value="todas">Qualquer nível</option>
+          <option value="facil">Fácil</option>
+          <option value="media">Média</option>
+        </select>
+      </div>
+    </section>
+
+    <p id="contador" class="contador" aria-live="polite"></p>
+
+    <section id="lista-flores" class="lista-flores" aria-label="Flores"></section>
+  </main>
+  <footer class="rodape">
+    <p>Feito por Daniel de Souza</p>
+  </footer>
+   <script src="js/dados.js"></script>
+  <script src="js/flores.js"></script>
+</body>
+</html>
