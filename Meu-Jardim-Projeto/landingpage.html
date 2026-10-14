@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Jardim </title>
+  <link rel="stylesheet" href="css/landingpage.css">
+  <link rel="icon" href="img/imagensplantas/icons8-potted-plant-96.png">
+
+</head>
+<body>
+ 
+  <!-- 1. BARRA DE MENU -->
+  <!-- O fundo vai de ponta a ponta; o conteúdo fica dentro do .container -->
+  <header class="barra-menu">
+    <div class="container barra-menu-conteudo">
+      <a href="landingpage.html" class="logo">Meu Jardim</a>
+ 
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="landingpage.html">Início</a></li>
+          <li><a href="plantas.html">Plantas</a></li>
+          <li><a href="flores.html">Flores</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+ 
+    <!-- 2. HERO: a primeira coisa que a pessoa vê -->
+    <!-- Responde: "o que é isso?" e "o que eu faço agora?" -->
+    <section class="hero">
+      <div class="container">
+        <!-- Este é o ÚNICO h1 da página -->
+        <h1 class="hero-titulo">Pessoas são como plantas, precisam de cuidados e</h1><h1 class="hero-titulo" style="color: crimson;">amor</h1>
+        <p class="hero-texto">O Site Meu Jardim foi criado com objetivo de ajudar pessoas iniciantes no cuidado de Plantas e Flores.</p>
+ 
+        <!-- É um link (<a>) estilizado como botão, porque ele leva para outra página -->
+        <a href="plantas.html" class="botao">Ver plantas</a>
+        <a href="flores.html" class="botao botao-secundario">Ver flores</a>
+      </div>
+    </section>
+ 
+    <!-- 3. BENEFÍCIOS: por que isso me ajuda? -->
+    <section class="secao">
+      <div class="container">
+        <h2>Por que usar o Meu Jardim</h2>
+ 
+        <div class="grade">
+          <!-- Um cartão. Copie e cole para fazer os outros -->
+          <article class="beneficio">
+            <h3>Oque o Site tem ?</h3>
+            <p>Filtro por luz e dificuldade</p>
+          </article>
+ 
+          <article class="beneficio">
+            <h3>Benefício 2</h3>
+            <p>Explique em uma ou duas frases.</p>
+          </article>
+ 
+          <article class="beneficio">
+            <h3>Benefício 3</h3>
+            <p>Explique em uma ou duas frases.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- 4. COMO FUNCIONA: passos numerados -->
+    <section class="secao secao-destaque">
+      <div class="container">
+        <h2>Como funciona</h2>
+ 
+        <!-- ol = lista ORDENADA: o navegador numera sozinho -->
+        <ol class="passos">
+          <li>Passo 1: o que a pessoa faz primeiro.</li>
+          <li>Passo 2: o que ela faz depois.</li>
+          <li>Passo 3: o resultado que ela recebe.</li>
+        </ol>
+      </div>
+    </section>
+ 
+    <!-- 5. PRÉVIA: mostra um pouco do que existe dentro do site -->
+    <section class="secao" id="destaques">
+      <div class="container">
+        <h2>Algumas plantas do catálogo</h2>
+ 
+        <!-- Fica vazia por enquanto. Depois, o JavaScript pode preencher com
+             3 plantas usando o dados.js e a função criarCard -->
+        <div id="lista-destaques" class="grade"></div>
+ 
+        <a href="plantas.html" class="botao">Ver catálogo completo</a>
+      </div>
+    </section>
+ 
+    <!-- 6. CHAMADA FINAL: um último convite para agir -->
+    <section class="chamada-final">
+      <div class="container">
+        <h2>Frase de convite final</h2>
+        <a href="plantas.html" class="botao">Cuide Da Sua Planta!</a>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- 7. RODAPÉ -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Feito por Daniel de Souza</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>
+ 
